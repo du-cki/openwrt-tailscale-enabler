@@ -5,10 +5,10 @@
 tar x -zvC / -f openwrt-tailscale-enabler-<tag>.tgz
 ```
 
-2. Install the prerequisites for wget and tailscale:
+2. Install the prerequisites for tailscale:
 ```
 opkg update
-opkg install libustream-openssl ca-bundle kmod-tun
+opkg install libustream-openssl ca-bundle kmod-tun curl
 ```
 
 3. Run tailscale for the first time:
